@@ -36,7 +36,7 @@ Algunas APIS solo pueden ser usadas despues de que este evento ocurra*/
 app.whenReady().then(createWindow);
 
 app.on("window-all-closed", () => {
-  //Si la plataforma no es IOS entonces se cierra
+  //Si la plataforma no es macOS entonces se cierra
   if (process.platform !== "darwin") {
     app.quit();
   }
